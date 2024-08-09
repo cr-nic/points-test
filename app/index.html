@@ -24,9 +24,6 @@
       // included, separated by spaces.
       var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
       // uglyish hack to get code to work with inline js; problem with Parcel
-      window.handleClientLoad = () => {
-        gapi.load('client:auth2', initClient);
-      }
 
         /**
          *  Initializes the API client library and sets up sign-in state
