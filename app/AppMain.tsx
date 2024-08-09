@@ -52,7 +52,7 @@ class AppMain extends React.Component<IProps, IState> {
       this.setState({searching: true, loaded: true})
       const email = val.value;
       gapi.client.sheets.spreadsheets.values.batchGet({
-        spreadsheetId: '1_l0zbas3IaxCepaFD4I3m302Cco376D-sDLxMnJ8JZc',
+        spreadsheetId: '1JTYQ5zMGlBQnBQmPeulNzXti_RBdifcRBtuMweX1xA4',
         ranges: ['Non-thespians!F2:J', 'Thespians!F2:J'],
       }).then(response => {
         this.setState({searching: false})
